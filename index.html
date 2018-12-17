@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+    <div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Game Instructions</h3>
+		</br>
+		<ol>
+			<li>The number you want to score will be displayed on the screen as<span>"Target Number"</span></li>
+			<li>The crystals are pictured below.</li>
+			<li>When you click on a crystal you will add a random number of points to your score.</li>
+			<li>You win the game by achieving the total score named "Target Number".</li>
+			<li>You lose if your total score goes over the target number.</li>
+			<li>You won't know the number of each crystal until you click on it.</li>
+			<li>The numbers of each crystal will change every time the game is restarted.</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Target Number:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="crystals">
+		<img src="assets/images/blue.png" class=crystalImage id="crystalOne" alt="Blue crystal">
+		<img src="assets/images/green.png" class=crystalImage id="crystalTwo" alt="Green crystal">
+		<img src="assets/images/red.jpg" class=crystalImage id= "crystalThree" alt="Red crystal">
+		<img src="assets/images/orange.jpg" class=crystalImage id= "crystalFour" alt="Orange crystal">
+	</div>
+	<div class="userTotal">
+		<h2>Your Score:
+			<span id="overallTotal"></span>
+		</h2>
+	</div>
+	
+	
+</body>
+</html>
